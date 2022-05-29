@@ -1,0 +1,121 @@
+.carousel {
+    padding: 81px 0;
+    &__inner {
+        width: 750px;
+        margin: 0 auto;
+    }
+    .slick-prev {
+        position: absolute;
+        top: 50%;
+        left: -66px;
+        transform: translateY(-50%);
+        border: none;
+        background-color: #ffffff;
+        img {
+            width: 31px;
+            height: 50px;
+        }
+    }
+
+    .slick-next {
+        position: absolute;
+        top: 50%;
+        right: -66px;
+        transform: translateY(-50%);
+        border: none;
+        background-color: #ffffff;
+        img {
+            width: 31px;
+            height: 50px;
+        }
+    }
+
+    .slick-dots {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        list-style-type: none;
+        li {
+            position: relative;
+            margin: 0 5px;
+            cursor: pointer;
+            width: 20px;
+            height: 20px;
+            button {
+                width: 100%;
+                height: 100%;
+                color: transparent;
+                border: 0;
+                outline: none;
+                background: transparent;
+                transition: 3s all;
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    width: 6px;
+                    height: 6px;
+                    background-color: black;
+                    border-radius: 100%;
+                    transition: 0.5s all;
+                }
+            }
+        }
+        .slick-active {
+            button {
+                &::before {
+                    width: 10px;
+                    height: 10px;
+                    background-color: $main-color;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .carousel {
+        padding-bottom: 50px;
+        &__inner {
+            width: 650px;
+        }
+        .slick-slide {
+            img {
+                width: 650px;
+            }
+        }
+
+    }
+}
+
+@media (max-width: 767px) {
+    .carousel {
+        padding-bottom: 50px;
+        &__inner {
+            width: 550px;
+        }
+        .slick-slide {
+            img {
+                width: 550px;
+            }
+        }
+
+    }
+}
+
+@media (max-width: 575px) {
+    .carousel {
+        &__inner {
+            width: 100%;
+        }
+        .slick-slide {
+            img {
+                width: 300px;
+                margin: 0 auto;
+            }
+        }
+    }
+}

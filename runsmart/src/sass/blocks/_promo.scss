@@ -1,0 +1,119 @@
+.promo {
+    min-height: 655px;
+    padding: 21px 0 93px 0;
+    background: url(../img/header/bg.jpg) center center/cover no-repeat;
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        margin-top: 90px;
+    }
+
+    &__header {
+        font-weight: 700;
+        font-size: 42px;
+        text-align: right;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+
+    &__subheader {
+        font-weight: 500;
+        font-size: 24px;
+        text-align: right;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+
+    &__icons {
+        margin-top: 60px;
+        margin-bottom: 65px;
+        display: flex;
+        justify-content: flex-end;
+    }
+    &__icon {
+        margin-left: 67px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 14px;
+        text-align: center;
+        color: #FFFFFF;
+        img {
+            width: 45px;
+            height: 45px;
+            margin-bottom: 20px;
+        }
+    }
+
+    &__link {
+        margin-top: 10px;
+        font-weight: 500;
+        font-size: 16px;
+        text-align: right;
+        color: #FFFFFF;
+        a {
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 16px;
+            text-decoration-line: underline;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            transition: 0.3s all;
+            &:hover {
+                color: $main-color;
+            }
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .promo {
+        min-height: 590px;
+        padding-bottom: 65px;
+        &__wrapper {
+            margin-top: 60px;
+            align-items: center;
+        }
+        &__icons {
+            margin-top: 40px;
+            margin-bottom: 50px;
+            justify-content: center;
+            
+        }
+        &__icon {
+            margin: 0 34px 0 34px;
+        }
+        &__header {
+            font-size: 38px;
+        }
+        &__subheader {
+            font-size: 22px;
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .promo {
+        &__header {
+            font-size: 30px;
+            text-align: center;
+        }
+        &__subheader {
+            font-size: 16px;
+            text-align: center;
+        }
+        &__icons {
+            width: 100%;
+            flex-wrap: wrap;
+        }
+        &__icon {
+            margin: 0 20px;
+            &:last-child {
+                margin-top: 30px;
+            }
+        }
+    }
+}

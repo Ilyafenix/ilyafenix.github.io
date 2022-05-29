@@ -1,0 +1,79 @@
+.benefits {
+    min-height: 470px;
+    background: $benefits-bg-color;
+    padding-top: 73px;
+    padding-top: 65px;
+    &__header {
+        font-weight: 700;
+        font-size: 30px;
+        text-align: center;
+        color: $font-main-color;
+    }
+    &__wrapper {
+        margin-top: 60px;
+        display: flex;
+        justify-content: space-around;
+    }
+    &__card {
+        width: 24%;
+/*         display: flex;
+        flex-direction: column; */
+    }
+    &__icon {
+        display: block;
+        margin: 0 auto;
+    }
+    &__title {
+        margin-top: 35px;
+        font-weight: 700;
+        font-size: 18px;
+        text-align: center;
+        color: $font-main-color
+    }
+    &__descr {
+        margin-top: 20px;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 18px;
+        text-align: center;
+        color: $font-main-color;
+        a {
+            text-decoration: none;
+            color: #FF0000;
+            &:hover {
+                text-decoration-line: underline;
+            }
+        }
+    }
+
+}
+
+@media (max-width: 991px) {
+    .benefits {
+        &__card {
+            width: 27%;
+        }
+        &__title {
+            font-size: 16px;
+        }
+        &__descr {
+            font-size: 12px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .benefits {
+        &__wrapper {
+            padding-bottom: 40px;
+            flex-wrap: wrap;
+        }
+        &__card {
+            margin-top: 40px;
+            width: 300px;
+            &:first-child {
+                margin-top: 0;
+            }
+        }
+    }
+}
