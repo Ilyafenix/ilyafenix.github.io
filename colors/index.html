@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Подбор палитры</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="header__buttons">
+            <div class="header__reload">
+                <div class="header__reload-icon">
+                    <svg width="30" height="27" viewBox="0 0 30 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5.9532 20.2528C6.44234 21.0076 7.02261 21.72 7.69381 22.3743C12.5473 27.1057 20.3173 27.0066 25.0487 22.1531C29.78 17.2997 29.681 9.52963 24.8275 4.7983C19.974 0.0669701 12.2039 0.166001 7.47261 5.01949L1.44411 11.2037M1.44411 11.2037L1.98038 2.83942M1.44411 11.2037L9.79195 10.4544" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <div class="header__text">Обновить</div>
+            </div>
+
+            <div class="header__copy">
+                <div class="header__copy-icon">
+                    <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.49724 16.1515H4.37602C3.03715 16.1515 1.95178 15.0661 1.95178 13.7273V3.42424C1.95178 2.08537 3.03715 1 4.37602 1H14.6791C16.0179 1 17.1033 2.08537 17.1033 3.42424V5.54545M9.22451 21H19.5275C20.8664 21 21.9518 19.9146 21.9518 18.5758V8.27273C21.9518 6.93386 20.8664 5.84848 19.5275 5.84848H9.22451C7.88564 5.84848 6.80027 6.93386 6.80027 8.27273V18.5758C6.80027 19.9146 7.88564 21 9.22451 21Z" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <div class="header__text">Копировать все</div>
+            </div>
+        </div>
+
+        <div class="header__author">
+            <div class="header__name">Илья Киприянов</div>
+            <img src="img/author.png" alt="author img" class="header__img">
+            <a href="http://portfolio.ilifix.ru/dist/" target="_blank" class="header__site">ilifix.ru</a>
+        </div>
+
+    </div>
+
+    <div class="copy-all">
+        <div class="copy-all__text">
+            Скопированно
+        </div>
+    </div>
+
+    <div class="colors">
+
+        <div class="colors__block">
+            <div class="colors__value">
+                <div class="colors__hash"></div>
+                <div class="colors__copy">
+                    <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.49724 16.1515H4.37602C3.03715 16.1515 1.95178 15.0661 1.95178 13.7273V3.42424C1.95178 2.08537 3.03715 1 4.37602 1H14.6791C16.0179 1 17.1033 2.08537 17.1033 3.42424V5.54545M9.22451 21H19.5275C20.8664 21 21.9518 19.9146 21.9518 18.5758V8.27273C21.9518 6.93386 20.8664 5.84848 19.5275 5.84848H9.22451C7.88564 5.84848 6.80027 6.93386 6.80027 8.27273V18.5758C6.80027 19.9146 7.88564 21 9.22451 21Z" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="colors__lock">
+                <div class="colors__locked active">
+                    <svg width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9.78788 14.3333V16.1515M5.84848 9.48485V4.93939C5.84848 2.76373 7.61221 1 9.78788 1C11.9635 1 13.7273 2.76373 13.7273 4.93939V9.48485M5.84848 9.48485H3.42424C2.08537 9.48485 1 10.5702 1 11.9091V18.5758C1 19.9146 2.08537 21 3.42424 21H16.1515C17.4904 21 18.5758 19.9146 18.5758 18.5758V11.9091C18.5758 10.5702 17.4904 9.48485 16.1515 9.48485H13.7273M5.84848 9.48485H13.7273" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <div class="colors__unlocked ">
+                    <svg width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8 9.48485C8 9.48485 8 7.11506 8 4.93939C8 2.76373 6.67567 1 4.5 1C2.32433 1 1.00001 2.4607 1.00001 4.63636V4.93939M9.78788 14.3333V16.1515M16.1515 21H3.42424C2.08537 21 1 19.9146 1 18.5758V11.9091C1 10.5702 2.08537 9.48485 3.42424 9.48485H16.1515C17.4904 9.48485 18.5758 10.5702 18.5758 11.9091V18.5758C18.5758 19.9146 17.4904 21 16.1515 21Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+        <div class="colors__block">
+            <div class="colors__value">
+                <div class="colors__hash"></div>
+                <div class="colors__copy">
+                    <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.49724 16.1515H4.37602C3.03715 16.1515 1.95178 15.0661 1.95178 13.7273V3.42424C1.95178 2.08537 3.03715 1 4.37602 1H14.6791C16.0179 1 17.1033 2.08537 17.1033 3.42424V5.54545M9.22451 21H19.5275C20.8664 21 21.9518 19.9146 21.9518 18.5758V8.27273C21.9518 6.93386 20.8664 5.84848 19.5275 5.84848H9.22451C7.88564 5.84848 6.80027 6.93386 6.80027 8.27273V18.5758C6.80027 19.9146 7.88564 21 9.22451 21Z" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="colors__lock">
+                <div class="colors__locked active">
+                    <svg width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9.78788 14.3333V16.1515M5.84848 9.48485V4.93939C5.84848 2.76373 7.61221 1 9.78788 1C11.9635 1 13.7273 2.76373 13.7273 4.93939V9.48485M5.84848 9.48485H3.42424C2.08537 9.48485 1 10.5702 1 11.9091V18.5758C1 19.9146 2.08537 21 3.42424 21H16.1515C17.4904 21 18.5758 19.9146 18.5758 18.5758V11.9091C18.5758 10.5702 17.4904 9.48485 16.1515 9.48485H13.7273M5.84848 9.48485H13.7273" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <div class="colors__unlocked ">
+                    <svg width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8 9.48485C8 9.48485 8 7.11506 8 4.93939C8 2.76373 6.67567 1 4.5 1C2.32433 1 1.00001 2.4607 1.00001 4.63636V4.93939M9.78788 14.3333V16.1515M16.1515 21H3.42424C2.08537 21 1 19.9146 1 18.5758V11.9091C1 10.5702 2.08537 9.48485 3.42424 9.48485H16.1515C17.4904 9.48485 18.5758 10.5702 18.5758 11.9091V18.5758C18.5758 19.9146 17.4904 21 16.1515 21Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+        <div class="colors__block">
+            <div class="colors__value">
+                <div class="colors__hash"></div>
+                <div class="colors__copy">
+                    <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.49724 16.1515H4.37602C3.03715 16.1515 1.95178 15.0661 1.95178 13.7273V3.42424C1.95178 2.08537 3.03715 1 4.37602 1H14.6791C16.0179 1 17.1033 2.08537 17.1033 3.42424V5.54545M9.22451 21H19.5275C20.8664 21 21.9518 19.9146 21.9518 18.5758V8.27273C21.9518 6.93386 20.8664 5.84848 19.5275 5.84848H9.22451C7.88564 5.84848 6.80027 6.93386 6.80027 8.27273V18.5758C6.80027 19.9146 7.88564 21 9.22451 21Z" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="colors__lock">
+                <div class="colors__locked ">
+                    <svg width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9.78788 14.3333V16.1515M5.84848 9.48485V4.93939C5.84848 2.76373 7.61221 1 9.78788 1C11.9635 1 13.7273 2.76373 13.7273 4.93939V9.48485M5.84848 9.48485H3.42424C2.08537 9.48485 1 10.5702 1 11.9091V18.5758C1 19.9146 2.08537 21 3.42424 21H16.1515C17.4904 21 18.5758 19.9146 18.5758 18.5758V11.9091C18.5758 10.5702 17.4904 9.48485 16.1515 9.48485H13.7273M5.84848 9.48485H13.7273" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <div class="colors__unlocked active">
+                    <svg width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8 9.48485C8 9.48485 8 7.11506 8 4.93939C8 2.76373 6.67567 1 4.5 1C2.32433 1 1.00001 2.4607 1.00001 4.63636V4.93939M9.78788 14.3333V16.1515M16.1515 21H3.42424C2.08537 21 1 19.9146 1 18.5758V11.9091C1 10.5702 2.08537 9.48485 3.42424 9.48485H16.1515C17.4904 9.48485 18.5758 10.5702 18.5758 11.9091V18.5758C18.5758 19.9146 17.4904 21 16.1515 21Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+        <div class="colors__block">
+            <div class="colors__value">
+                <div class="colors__hash"></div>
+                <div class="colors__copy">
+                    <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.49724 16.1515H4.37602C3.03715 16.1515 1.95178 15.0661 1.95178 13.7273V3.42424C1.95178 2.08537 3.03715 1 4.37602 1H14.6791C16.0179 1 17.1033 2.08537 17.1033 3.42424V5.54545M9.22451 21H19.5275C20.8664 21 21.9518 19.9146 21.9518 18.5758V8.27273C21.9518 6.93386 20.8664 5.84848 19.5275 5.84848H9.22451C7.88564 5.84848 6.80027 6.93386 6.80027 8.27273V18.5758C6.80027 19.9146 7.88564 21 9.22451 21Z" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="colors__lock">
+                <div class="colors__locked active">
+                    <svg width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9.78788 14.3333V16.1515M5.84848 9.48485V4.93939C5.84848 2.76373 7.61221 1 9.78788 1C11.9635 1 13.7273 2.76373 13.7273 4.93939V9.48485M5.84848 9.48485H3.42424C2.08537 9.48485 1 10.5702 1 11.9091V18.5758C1 19.9146 2.08537 21 3.42424 21H16.1515C17.4904 21 18.5758 19.9146 18.5758 18.5758V11.9091C18.5758 10.5702 17.4904 9.48485 16.1515 9.48485H13.7273M5.84848 9.48485H13.7273" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <div class="colors__unlocked ">
+                    <svg width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8 9.48485C8 9.48485 8 7.11506 8 4.93939C8 2.76373 6.67567 1 4.5 1C2.32433 1 1.00001 2.4607 1.00001 4.63636V4.93939M9.78788 14.3333V16.1515M16.1515 21H3.42424C2.08537 21 1 19.9146 1 18.5758V11.9091C1 10.5702 2.08537 9.48485 3.42424 9.48485H16.1515C17.4904 9.48485 18.5758 10.5702 18.5758 11.9091V18.5758C18.5758 19.9146 17.4904 21 16.1515 21Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+        <div class="colors__block colors__block_white">
+            <div class="colors__value">
+                <div class="colors__hash"></div>
+                <div class="colors__copy">
+                    <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.49724 16.1515H4.37602C3.03715 16.1515 1.95178 15.0661 1.95178 13.7273V3.42424C1.95178 2.08537 3.03715 1 4.37602 1H14.6791C16.0179 1 17.1033 2.08537 17.1033 3.42424V5.54545M9.22451 21H19.5275C20.8664 21 21.9518 19.9146 21.9518 18.5758V8.27273C21.9518 6.93386 20.8664 5.84848 19.5275 5.84848H9.22451C7.88564 5.84848 6.80027 6.93386 6.80027 8.27273V18.5758C6.80027 19.9146 7.88564 21 9.22451 21Z" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="colors__lock">
+                <div class="colors__locked">
+                    <svg width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9.78788 14.3333V16.1515M5.84848 9.48485V4.93939C5.84848 2.76373 7.61221 1 9.78788 1C11.9635 1 13.7273 2.76373 13.7273 4.93939V9.48485M5.84848 9.48485H3.42424C2.08537 9.48485 1 10.5702 1 11.9091V18.5758C1 19.9146 2.08537 21 3.42424 21H16.1515C17.4904 21 18.5758 19.9146 18.5758 18.5758V11.9091C18.5758 10.5702 17.4904 9.48485 16.1515 9.48485H13.7273M5.84848 9.48485H13.7273" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <div class="colors__unlocked active">
+                    <svg width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8 9.48485C8 9.48485 8 7.11506 8 4.93939C8 2.76373 6.67567 1 4.5 1C2.32433 1 1.00001 2.4607 1.00001 4.63636V4.93939M9.78788 14.3333V16.1515M16.1515 21H3.42424C2.08537 21 1 19.9146 1 18.5758V11.9091C1 10.5702 2.08537 9.48485 3.42424 9.48485H16.1515C17.4904 9.48485 18.5758 10.5702 18.5758 11.9091V18.5758C18.5758 19.9146 17.4904 21 16.1515 21Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
